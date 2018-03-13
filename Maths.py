@@ -1,11 +1,15 @@
+"""
 Prime numbers from 0 to 100
-
-for num in range(2,101):
-	if all(num%i!=0 for i in range(2,num)):
-		print (num)
+"""
+def prime_numbers():
+	for num in range(2,101):
+		if all(num%i!=0 for i in range(2,num)):
+			print (num)
     
     
+"""
 First n prime numbers
+"""
 def primes(n):
 	prime = [2]
 	attempt = 3
@@ -14,6 +18,10 @@ def primes(n):
 			prime.append(attempt)
 		attempt += 2	
 	return prime
+  
+  """"
+  Sum of first n number of even fibonacci series
+  """
   
   def sum_even_fibonacci(n):
     i=1
@@ -31,6 +39,9 @@ def primes(n):
             fibonacci_sum = fibonacci_sum + sum_no
     print("The sum of first n even fibonacci numbers is ",fibonacci_sum)
 
+"""
+Largest palindrome of the product of two 3-digit numbers
+"""
 def largest_palindrome():
     palindromes=[]
     x=999
